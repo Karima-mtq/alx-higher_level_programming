@@ -10,3 +10,5 @@ matrix = [
 new_matrix = square_matrix_simple(matrix)
 print(new_matrix)
 print(matrix)
+new = square_matrix_simple()
+print(new)
