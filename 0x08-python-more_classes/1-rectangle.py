@@ -1,44 +1,44 @@
 #!/usr/bin/python3
-# 0-rectangle.py
-# By karima
-"""Defines class: Rectangle."""
+# 1-rectangle.py
+# By Me
+"""Defines Rectangle class."""
 
 
 class Rectangle:
-    """Represent rectangle."""
+    """Represent a rectangle."""
 
-    def __init__(self, width = 0, height = 0):
-        """initialize
+    def __init__(self, width=0, height=0):
+        """Initialize a new Rectangle.
 
         Args:
-            width (int)
-            height (int)
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
         """
-        self.__height = height
-        self.__width = width
+        self.width = width
+        self.height = height
 
-        @property
-        def height(self):
-            """get or set the height"""
-            return self.__height
+    @property
+    def width(self):
+        """Get/set the width of the rectangle."""
+        return self.__width
 
-        @height.setter
-        def height(self, value):
-            if not isinstance(value, int):
-                raise TypeError("height must be an integer")
-            if value < 0:
-                raise TypeError("height must be >= 0")
-            self.__height = value
+    @width.setter
+    def width(self, value):
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
-        @property
-        def width(self):
-            """get or set the width"""
-            return self.__width
+    @property
+    def height(self):
+        """Get/set the height of the rectangle."""
+        return self.__height
 
-        @width.setter
-        def width(self, value):
-            if not isinstance(value, int):
-                raise TypeError("width must be an integer")
-            if value < 0:
-                raise TypeError("width must be >= 0")
-            self.__width = value
+    @height.setter
+    def height(self, value):
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
