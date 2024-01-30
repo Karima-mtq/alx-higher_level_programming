@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 8-rectangle.py
-# By: me 
+# By: me
 """Defines a Rectangle class."""
 
 
